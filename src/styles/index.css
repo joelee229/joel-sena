@@ -1,0 +1,362 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1, h2, h3 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p, a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+/* Navbar */
+.nav {
+    animation: fade-down 1s;
+
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: transparent;
+    z-index: 3;
+    /* background-color: #9BAFBF; */
+}
+
+.nav .menu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 4rem;
+    align-items: center;
+    flex: 1;
+}
+
+.nav a {
+    padding-left: 32px;
+    font-size: 16px;
+    color: white;
+    transition: 400ms;
+}
+.nav a.selected {
+    color: #213240;
+}
+
+.nav span {
+    float: left;
+    margin-left: 16px;
+}
+
+
+/* Header */
+.header {
+    animation: fade-down 1s;
+    background: url("../assets/front-end-1.png") no-repeat scroll center;
+    background-size: cover;
+    height: 50rem;
+    width: 100%;
+}
+
+.overlay {
+    position: relative;
+    z-index: 2;
+}
+.overlay:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #679DCA;
+    opacity: 0.85;
+    z-index: -2;
+    transition: 0.3s;
+}
+
+.container-fluid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.perfil{
+    padding: 0 32px;
+    /* margin-top: 8rem; */
+}
+
+.perfil .foto {
+    border-radius: 50%;
+    width: 294px;
+    height: 294px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+.perfil .foto img {
+    position: absolute;
+    bottom: -8rem;
+    width: 100%;
+}
+
+.perfil .text {
+    margin-top: 24px;
+    text-align: center;
+    color: white;
+}
+
+.perfil .text h1 {
+    color: #213240;
+    margin-bottom: 0.5rem;
+}
+.perfil .text p {
+    margin-bottom: 0.5rem;
+}
+
+#arrow {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 4rem;
+}
+
+#arrow i{
+    font-size: 32px;
+    color: white;
+    margin: auto;
+    transition: 0.5s;
+}
+
+#arrow i:hover {
+    /* color: red; */
+    transform: scale(1.1, 1.1);
+}
+
+
+/* Fields */
+.field {
+    padding: 72px 32px;
+    display: flex;
+    justify-content: center;
+}
+.title {
+    position: relative;
+    display: inline-block;
+}
+
+.title:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    background-color: #679DCA;
+    height: 2px;
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.field p {
+    margin-top: 16px;
+    font-weight: 400;
+    /* letter-spacing: 0.1em; */
+    line-height: 1.5rem;
+}
+
+.field .phrase {
+    /* display: flex; */
+    max-width: 40rem;
+    text-align: justify;
+    margin-left: 16vw;
+}
+
+#diagonal {
+    background-color: #679DCA;
+    height: 72px;
+    width: 100%;
+    transform: skewY(-4deg);
+    -webkit-transform: skewY(-4deg);
+    padding: 32px 0;
+    margin-top: 24px;
+    position: absolute;
+    top: -90px;
+}
+
+.title-inv {
+    color: white;
+    transform: skewY(4deg);
+    -webkit-transform: skewY(4deg);
+    position: relative;
+    /* display: inline-block; */
+    float: right;
+    margin: 32px 128px;
+}
+
+.title-inv:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50px;
+    height: 2px;
+    margin: auto;
+    background-color: white;
+}
+
+.project-container {
+    display: block; 
+    text-align: center; 
+    max-width: 1064px; 
+    margin: auto;
+}
+
+.project {
+    width: 450px;
+    height: 160px;
+    background-color: white;
+    z-index: 2;
+    padding: 16px;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: justify;
+    margin: 16px;
+    transition: 400ms;
+}
+
+.project .block {
+    display: inline-block;
+}
+
+.project:hover {
+    transform: scale(1.03,1.03);
+    box-shadow: 0 0 5px #263A4A;
+}
+
+.field .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+    width: 56%;
+}
+
+#skills {
+    padding: 48px 16px;
+    text-align: center;
+}
+
+
+#skills ul {
+    margin: 16px auto;
+    padding: 0;
+    display: block;
+    max-width: 800px;
+
+}
+
+/* .skill-container {
+    display: grid;
+    margin-top: 32px;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    width: 50%;
+    padding: 0 64px;
+} */
+
+.skill {
+    background-color: #E4E4EA;
+    color: #707070;
+    border-radius: 2px;
+    padding: 8px;
+    margin: 10px 8px;
+    display: inline-block;
+    transition: 400ms;
+}
+
+.skill:hover {
+    transform: scale(0.90, 0.90);
+}
+
+.skill p {
+    margin: 0;
+}
+
+.subgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-gap: 8px; */
+}
+
+/* Footer */
+.cabecalho {
+    background-color: #679DCA;
+    padding: 32px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.cabecalho #arrow-up i {
+    font-size: 24px;
+    color: white;
+    margin: auto;
+    transition: 400ms;
+    /* position: absolute;
+    right: 50vw; */
+}
+
+.cabecalho #arrow-up i:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.cabecalho .links i{
+    margin: 0 8px;
+    color: white;
+    transition: 400ms;
+    font-size: 24px;
+}
+
+.cabecalho .links i:hover {
+    color: #213240;
+}
+
+/* Utils */
+.blue {
+    background-color: #679DCA;
+}
+
+.negrit {
+    font-weight: 500;
+}
+/* Animations */
+@keyframes fade-down {
+    from {
+        opacity: 0;
+        transform: translateY(-20%);
+    }to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}

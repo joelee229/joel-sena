@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Ubuntu:wght@700&display=swap"
+        rel="stylesheet">
+    <link href="styles/index.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <nav class="nav" id="nav">
+        <span><img id="logo" height="48px" src="./assets/Logo.png" alt="Code"></span>
+        <div class="menu">
+            <a href="#head" id="0" onclick="click(0)">Home</a>
+            <a href="#about" id="1" onclick="click(1)">Sobre mim</a>
+            <a href="#exp" id="2" onclick="click(2)">Experiências</a>
+            <a href="#skills" id="3" onclick="click(3)">Habilidades</a>
+        </div>
+    </nav>
+    <header class="header overlay" id="head">
+        <div class="container-fluid">
+            <div class="perfil">
+                <div class="foto">
+                    <img width="294" src="./assets/perfil.jpeg" alt="Joel Sena">
+                </div>
+                <div class="text">
+                    <h1>Desenvolvedor frontend</h1>
+                    <p>Joel Crescêncio de Lima Sena</p>
+                    <p style="font-weight: 400;">Estudante do IFB - Instituto Federal de Brasília</p>
+                </div>
+            </div>
+            <span id="arrow">
+                <a href="#about">
+                    <i class="far fa-arrow-alt-circle-down"></i>
+                </a>
+            </span>
+        </div>
+    </header>
+
+    <section class="field" id="about">
+        <div>
+            <h1 class="title">Sobre mim</h1>
+            <div class="phrase">
+                <p>
+                    Tenho 17 anos, faço curso técnico em informática integrado ao ensino médio e no mesmo instituto
+                    estou em
+                    alguns projetos/startups. Conheci o mundo da programação e me apaixonei de primeira, desde então
+                    venho
+                    descobrindo e me aprimorando em várias tecnologias.
+                </p>
+                <p>
+                    A disciplina que mais gostei nesse vasto mundo da programação foi a parte de desenvolvimento
+                    web/mobile e
+                    tudo relacionado a esse processo. Como: Frontend, backend, UX/UI Design, e etc. Já tive a
+                    oportunidade de
+                    desenvolver alguns sites e apps mas ainda sou novo na área.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="" style="position: relative; margin-top: 64px;">
+        <div id="diagonal">
+            <h1 class="title-inv" id="exp">Experiências</h1>
+        </div>
+        <section class="field blue" style="margin-top: 32px; padding: 128px; display: block;">
+            <!-- <div class="grid">
+                <div class="project">
+                    <img height="108" src="./assets/ifb-logo.png" alt="IFB">
+                    <div class="block">
+                        <p class="negrit"><b>Robot Vision - Aprendizagem de máquina</b></p>
+                        <p>Nesse projeto de pesquisa mexemos com robótica, visão computacional(OpenCV) no Python e,
+                            utilizamos Arduino para a construção do robô.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img height="108" src="./assets/logoTrue.png" alt="IFB">
+                    <div class="block" style="margin-left: 16px;">
+                        <p class="negrit"><b>Desenvolvedor frontend - ScoutNet</b></p>
+                        <p>Startup para o auxílio das atividades do movimento escoteiro.
+                            <br>Aplicativo e WebSite</p>
+                    </div>
+                </div>
+                <div class="project" >
+                    <img height="108" src="./assets/ifb-logo.png" alt="IFB">
+                    <div class="block">
+                        <p class="negrit"><b>Coral - Voluntariado</b></p>
+                        <p>Participei da equipe de coral do IFB. Adiquiri muitos conhecimentos de canto e musicais.</p>
+                    </div>
+                </div>
+            </div> -->
+            <div class="project-container">
+                <div class="project">
+                    <div style="display: flex;">
+                        <img height="108" src="./assets/ifb-logo.png" alt="IFB">
+                        <div class="block">
+                            <p class="negrit"><b>Robot Vision - Aprendizagem de máquina</b></p>
+                            <p>Nesse projeto de pesquisa mexemos com robótica, visão computacional(OpenCV) no Python e,
+                                utilizamos Arduino para a construção do robô.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div style="display: flex;">
+                        <img height="108" src="./assets/logoTrue.png" alt="IFB">
+                        <div class="block" style="margin-left: 16px;">
+                            <p class="negrit"><b>Desenvolvedor frontend - ScoutNet</b></p>
+                            <p>Startup para o auxílio das atividades do movimento escoteiro.
+                                <br>Aplicativo e WebSite</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div style="display: flex;">
+                        <img height="108" src="./assets/ifb-logo.png" alt="IFB">
+                        <div class="block">
+                            <p class="negrit"><b>Coral - Voluntariado</b></p>
+                            <p>Participei da equipe de coral do IFB. Adiquiri muitos conhecimentos de canto e musicais.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Skills com grid -->
+    <!-- <section class="field" id="skills" >
+        <div style="margin-left: 32px;">
+            <h1 class="title">Habilidades</h1>
+        </div>
+        <ul class="skill-container">
+            <li class="skill">
+                <p>Fullstack development</p>
+            </li>
+            <li class="subgrid">
+                <div class="skill">
+                    <p>Java</p>
+                </div>
+                <div class="skill">
+                    <p>HTML</p>
+                </div>
+            </li>
+            <li class="subgrid">
+                <div class="skill">
+                    <p>Angular</p>
+                </div>
+                <div class="skill">
+                    <p>React</p>
+                </div>
+            </li>
+            <li class="skill">
+                <p>Machine Learning</p>
+            </li>
+            <li class="skill">
+                <p>React Native</p>
+            </li>
+            <li class="subgrid">
+                <div class="skill">
+                    <p>Javascript</p>
+                </div>
+                <div class="skill">
+                    <p>Node</p>
+                </div>
+            </li>
+            <li class="subgrid">
+                <div class="skill">
+                    <p>Typescript</p>
+                </div>
+                <div class="skill">
+                    <p>Arduino</p>
+                </div>
+            </li>
+            <li class="subgrid">
+                <div class="skill">
+                    <p>Python</p>
+                </div>
+                <div class="skill">
+                    <p>OpenCV</p>
+                </div>
+            </li>
+            <li class="skill">
+                <p>Computer Vision</p>
+            </li>
+
+            <li class="skill">
+                <p>UX/UI Design</p>
+            </li>
+        </ul>
+    </section> -->
+
+    <!-- Skills com display: inline-block -->
+    <section id="skills">
+        <div>
+            <h1 class="title">Habilidades</h1>
+        </div>
+        <ul>
+            <li class="skill">
+                <p>Fullstack development</p>
+            </li>
+            <li class="skill">
+                <p>Java</p>
+            </li>
+            <li class="skill">
+                <p>HTML</p>
+            </li>
+            <li class="skill">
+                <p>Angular</p>
+            </li>
+            <li class="skill">
+                <p>React</p>
+            </li>
+            <li class="skill">
+                <p>Machine Learning</p>
+            </li>
+            <li class="skill">
+                <p>React Native</p>
+            </li>
+            <li class="skill">
+                <p>Javascript</p>
+            </li>
+            <li class="skill">
+                <p>Node</p>
+            </li>
+            <li class="skill">
+                <p>Typescript</p>
+            </li>
+            <li class="skill">
+                <p>Arduino</p>
+            </li>
+            <li class="skill">
+                <p>Python</p>
+            </li>
+            <li class="skill">
+                <p>OpenCV</p>
+            </li>
+            <li class="skill">
+                <p>Computer Vision</p>
+            </li>
+
+            <li class="skill">
+                <p>UX/UI Design</p>
+            </li>
+        </ul>
+    </section>
+
+    <footer class="cabecalho">
+        <p>Copyright&copy;2020 Joel Crescêncio de Lima Sena</p>
+        <span id="arrow-up">
+            <a href="#head">
+                <i class="far fa-arrow-alt-circle-up"></i>
+            </a>
+        </span>
+        <div class="links">
+            <a href="https://github.com/joelee229" target="blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/joel-sena/" target="blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/joelee229" target="blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/joe_lee229/" target="blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+
+
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
